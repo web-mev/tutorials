@@ -27,7 +27,9 @@ jobs:
         ruby-version: "3.3" 
         bundler-cache: true
     - name: "Build Site"
-      run: bundle exec jekyll build --source ./tutorials
+      run: |
+        bundle exec jekyll build --source ./tutorials
+        ls
       env:
         JEKYLL_ENV: production
     # Note that the aws-cli is default available in the Actions virtual environments
