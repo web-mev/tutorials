@@ -17,10 +17,11 @@ env:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    env: # $BUNDLE_GEMFILE must be set at the job level, so it is set for all steps
+      BUNDLE_GEMFILE: ./tutorials/Gemfile
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set up Ruby
-      working-directory: ./tutorials
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: "3.3" 
