@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Single-cell RNA-seq Tutorial with WebMeV
+title: Single-cell RNA-seq
+nav_order: 2
 ---
 # scRNA-seq page
 
